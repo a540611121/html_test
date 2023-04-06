@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我的表白</title>
+	<style type="text/css">
+		body {
+			background-color: #F8BBD0; /* 设置背景颜色 */
+			margin: 0; /* 将页面外边距设为 0 */
+			padding: 0; /* 将页面内边距设为 0 */
+			font-family: Arial, sans-serif; /* 设置字体 */
+		}
+		h1 {
+			text-align: center; /* 居中对齐 */
+			color: #FFF; /* 设置字体颜色 */
+			margin-top: 100px; /* 上部外边距 */
+			font-size: 48px; /* 字体大小 */
+			animation: heartbeat 1s ease-in-out infinite; /* 应用动画效果 */
+		}
+		@keyframes heartbeat { /* 定义动画效果 */
+			0% {
+				transform: scale(1); /* 初始状态：不做任何变换 */
+			}
+			50% {
+				transform: scale(1.2); /* 中间状态：向上缩放 */
+			}
+			100% {
+				transform: scale(1); /* 结束状态：回到初始状态 */
+			}
+		}
+		p {
+			text-align: center; /* 居中对齐 */
+			color: #FFF; /* 设置字体颜色 */
+			margin-top: 50px; /* 上部外边距 */
+			font-size: 24px; /* 字体大小 */
+			animation: float 3s ease-in-out infinite; /* 应用动画效果 */
+		}
+		@keyframes float { /* 定义动画效果 */
+			0% {
+				transform: translateY(0); /* 初始状态：不做任何变换 */
+			}
+			50% {
+				transform: translateY(-20px); /* 中间状态：向上平移 */
+			}
+			100% {
+				transform: translateY(0); /* 结束状态：回到初始状态 */
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>我爱你</h1> <!-- 添加标题 -->
+	<p>这是我对你最真挚的告白，愿我们能够永远在一起。</p> <!-- 添加段落文本 -->
+</body>
+</html>
