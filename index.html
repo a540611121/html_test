@@ -1,54 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>我的表白</title>
-	<style type="text/css">
-		body {
-			background-color: #F8BBD0; /* 设置背景颜色 */
-			margin: 0; /* 将页面外边距设为 0 */
-			padding: 0; /* 将页面内边距设为 0 */
-			font-family: Arial, sans-serif; /* 设置字体 */
-		}
-		h1 {
-			text-align: center; /* 居中对齐 */
-			color: #FFF; /* 设置字体颜色 */
-			margin-top: 100px; /* 上部外边距 */
-			font-size: 48px; /* 字体大小 */
-			animation: heartbeat 1s ease-in-out infinite; /* 应用动画效果 */
-		}
-		@keyframes heartbeat { /* 定义动画效果 */
-			0% {
-				transform: scale(1); /* 初始状态：不做任何变换 */
-			}
-			50% {
-				transform: scale(1.2); /* 中间状态：向上缩放 */
-			}
-			100% {
-				transform: scale(1); /* 结束状态：回到初始状态 */
-			}
-		}
-		p {
-			text-align: center; /* 居中对齐 */
-			color: #FFF; /* 设置字体颜色 */
-			margin-top: 50px; /* 上部外边距 */
-			font-size: 24px; /* 字体大小 */
-			animation: float 3s ease-in-out infinite; /* 应用动画效果 */
-		}
-		@keyframes float { /* 定义动画效果 */
-			0% {
-				transform: translateY(0); /* 初始状态：不做任何变换 */
-			}
-			50% {
-				transform: translateY(-20px); /* 中间状态：向上平移 */
-			}
-			100% {
-				transform: translateY(0); /* 结束状态：回到初始状态 */
-			}
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>我的表白</title>
+
+    <!-- 引入外部 CSS 文件 -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- 引入外部 JavaScript 文件 -->
+    <script src="script.js"></script>
 </head>
 <body>
-	<h1>我爱你</h1> <!-- 添加标题 -->
-	<p>这是我对你最真挚的告白，愿我们能够永远在一起。</p> <!-- 添加段落文本 -->
+    <!-- 页面头部 -->
+    <header>
+        <h1>我爱你</h1>
+    </header>
+
+    <!-- 页面主体 -->
+    <main>
+        <div class="container">
+            <img src="background.jpg" alt="背景图片">
+
+            <div class="content">
+                <h2>我喜欢你的理由</h2>
+                <ul>
+                    <li>你的微笑让我忘记所有烦恼。</li>
+                    <li>你的温柔让我感受到了爱的力量。</li>
+                    <li>你的聪明才智令我钦佩不已。</li>
+                </ul>
+
+                <p>我想对你说：<span id="message">请做我女朋友！</span></p>
+                <button onclick="showInput()">回复一下吧</button>
+                <input type="text" id="input" placeholder="请输入您的回复">
+            </div>
+        </div>
+    </main>
+
+    <!-- 页面底部 -->
+    <footer>
+        <p>&copy;2023 我的表白</p>
+    </footer>
 </body>
 </html>
