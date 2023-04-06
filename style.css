@@ -6,95 +6,26 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fcf7ed;
+    background-color: #1abc9c;
 }
 
-.container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
-img {
+/* 雪花样式 */
+.snowflake {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(5px) brightness(0.8);
-    z-index: -1;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    will-change: transform;
 }
 
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-}
-
-h2 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-ul {
-    list-style: none;
-    margin-bottom: 50px;
-}
-
-li {
-    font-size: 28px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-#message {
-    color: #ff6b81;
-    animation: heartbeat 1s ease-in-out infinite;
-}
-
-button {
-    font-size: 24px;
-    padding: 10px 20px;
-    background-color: #ff6b81;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="text"] {
-    display: none;
-    width: 300px;
-    height: 40px;
-    padding: 0 10px;
-    font-size: 24px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 30px;
-}
-
-/* 动画 */
-@keyframes heartbeat {
-    0% {
-        transform: scale(1);
+/* 雪花动画 */
+@keyframes snowfall {
+    from {
+        transform: translateY(-100%);
     }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
+    to {
+        transform: translateY(100vh);
     }
 }
